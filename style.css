@@ -1,3 +1,280 @@
-h1{
+/* font style  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+nav h1{
+    width: 243px;
+    height: 52.2px;
+    font-size: 24px;
+}
+
+
+.banner:hover .banner-right img{
+    transform: rotate(45deg);
+     transition: transform 5s 
+     ease-in;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 30px;
+}
+.banner{
+    height: calc(100vh - 80px);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-left h1{
+    width: 582px;
+    height: 133px;
+    font-weight: 700;
+    font-size: 52px;
+}
+.banner-left p{
+    width: 505px;
+    height: 60.9px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A
+    ;
+}
+
+.section-title{
     text-align: center;
+    font-size: 28px;
+}
+.section-title h2{
+    font-size: 28px;
+
+}
+
+/* button style  */
+.primary-button{
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D ;
+    color: white;
+    border: none;
+    border-radius: 41px;
+    margin-top: 30px;
+}
+
+/* feature section  */
+.feature{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.card image{
+    height: 256px;
+    width: 300px;
+}
+.card{
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+}
+
+/* customer service section  */
+.service{
+    margin: 50px;
+    height: calc(100vh - 80px);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-title h1{
+    width: 582px;
+    height: 100px;
+    font-weight: 700;
+    font-size: 52px;
+}
+.section-title p{
+    width: 505px;
+    height: 60.9px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A
+    ;
+}
+
+.service-pic img{
+    border-radius: 20px;
+    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+/* fotter style  */
+
+footer h3{
+   
+    width: 262px;
+    height: 24px;
+    font-size: 14px;
+}
+footer{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0826;
+    color: white;
+    padding: 30px;
+}
+
+/* Midea Quries */
+
+/* Mobile device  */
+@media only  screen and (max-width:576px) {
+    body .container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .banner{
+        text-align: center;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-left h1{
+        width: 382px;
+        height: 53px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .banner-left p{
+        width: 382px;
+        height: 60.9px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3A3A3A
+        ;
+    }
+    #feature{
+        margin-top: 300px;
+    }
+    .feature{
+        margin-top: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns:  1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .service{
+        display: flex;
+        
+        flex-direction: column;
+    }
+    #customer-service{
+        margin: 0%;
+    }
+    .service h1{
+        width: 382px;
+        height: 53px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .service p{
+        width: 382px;
+        height: 60.9px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3A3A3A
+        ;
+    }
+
+    .service-pic img{
+        margin-top: 80px;
+    }
+}
+
+/* Tab Device  */
+@media only screen and (min-width:577px) and ( max-width:768px)  {
+    body{
+        background-color: yellow;
+    }
+    body .container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .banner{
+        text-align: center;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-left h1{
+        width: 382px;
+        height: 53px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .banner-left p{
+        width: 382px;
+        height: 60.9px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3A3A3A
+        ;
+    }
+    #feature{
+        margin-top: 300px;
+    }
+    .feature{
+        margin-top: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .service{
+        display: flex;
+        
+        flex-direction: column;
+    }
+    #customer-service{
+        margin: 0%;
+    }
+    .service h1{
+        width: 382px;
+        height: 53px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .service p{
+        width: 382px;
+        height: 60.9px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3A3A3A
+        ;
+    }
+
+    .service-pic img{
+        margin-top: 80px;
+    }
+
 }
